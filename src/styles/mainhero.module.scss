@@ -1,0 +1,64 @@
+@import "./variables.module.scss";
+.hero{
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+
+    .glow{
+        position:absolute;inset:-20%;pointer-events:none;opacity:.55;filter:blur(70px);
+        background:radial-gradient(600px 500px at 30% 30%, rgba(0,176,80,.55), transparent 60%),
+                 radial-gradient(600px 500px at 80% 40%, rgba(108,99,255,.5), transparent 60%);
+        z-index:0;
+    }
+
+    &_inner{
+        display:grid;
+        grid-template-columns: 1.1fr .9fr;
+        gap:2rem;
+        align-items:center;
+        min-height:76vh;
+        width: min(1200px,92vw);
+        margin: 0 auto;
+
+        &_title{
+                font-size: clamp(2.2rem, 4.5vw, 4rem);
+                line-height: 1.05;
+                margin: 0 0 1rem;
+                font-weight: 900;
+                .accent{
+                    background:$--accent;
+                    -webkit-background-clip:
+                    text;background-clip:
+                    text;color:transparent
+                }
+        }
+        &_subtitle{
+            color: $--muted;
+            font-size: clamp(1.05rem, 1.2vw, 1.2rem);
+            max-width: 60ch;
+        }
+        &_ctas{
+            display: flex;
+            gap: .8rem;
+            margin-top: 1.2rem;
+            flex-wrap: wrap;
+        }
+    }
+
+    .badges{
+        display: flex;
+        gap: .6rem;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
+    &_canvas{
+        padding: 1.2rem;
+        position: relative;
+        height: 520px;
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        background: radial-gradient(800px 400px at 70% 20%, rgba(108, 99, 255, .18), transparent 60%), #0b0c12;
+        box-shadow: var(--shadow);
+    }
+}

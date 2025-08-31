@@ -1,0 +1,12 @@
+@import "./variables.module.scss";
+.badge{
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+    padding: .35rem .6rem;
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .04);
+    font-size: .9rem;
+    color: $--muted;
+}

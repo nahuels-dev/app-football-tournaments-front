@@ -1,0 +1,29 @@
+@import "./variables.module.scss";
+.card{
+    background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, 0)), $--card;
+    border: 1px solid $--border;
+    border-radius: $--radius;
+    box-shadow: $--shadow;
+    padding: 1.2rem;
+    h2{
+        margin-bottom: 1.2rem;
+    }
+
+    .step{
+        display: flex;
+        gap: .8rem;
+        align-items: flex-start;
+        margin: .8rem 0;
+
+        &_num{
+                width: 32px;
+                height: 32px;
+                border-radius: 10px;
+                background: $--accent;
+                display: grid;
+                place-items: center;
+                color: #0b0c12;
+                font-weight: 900;
+        }
+    }
+}
