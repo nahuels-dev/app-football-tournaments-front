@@ -1,0 +1,24 @@
+@import "./variables.module.scss";
+.container{
+    width: min(1200px, 92vw);
+    margin: 0 auto;
+
+    h2{
+        margin: 10px 0;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .grid_container{
+        display: grid;
+        gap: 1.2rem;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        .betterplan{
+            position: relative;
+            top: -10px;
+            border-radius: $--radius;
+            border: 1px solid rgba(108, 99, 255, .7);
+        }
+    }
+}

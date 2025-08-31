@@ -9,7 +9,7 @@ export default function MainHero() {
       <div className={styles.glow}></div>
       <div className={styles.hero_inner}>
         <div>
-            <Badge txt={"⚽ Plataforma de torneos &amp; partidos"}/>
+            <Badge txt={"⚽ Plataforma de torneos & partidos"}/>
             <div className={styles.badge}></div>
             <h1 className={styles.hero_inner_title}>
             Organizá tus torneos. Jugá tus partidos. <span className={styles.accent}>Falta uno</span> nunca más.
